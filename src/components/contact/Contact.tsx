@@ -1,4 +1,4 @@
-import { useState, useRef, useEffect, CSSProperties, ReactNode } from 'react';
+import { useState, useRef, useEffect, CSSProperties } from 'react';
 import { gsap } from 'gsap';
 import styles from './contact.module.scss';
 import {Icon} from '@iconify/react'
