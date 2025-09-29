@@ -1,0 +1,132 @@
+.section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    h1 {
+        font-size: 3rem;
+    }
+}
+
+.galleryContainer {
+  position: relative;
+  height: 500px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.galleryGradient {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 48px;
+  z-index: 10;
+}
+
+.galleryGradientLeft {
+  left: 0;
+  background: linear-gradient(to left, rgba(0, 0, 0, 0) 0%, #060010 100%);
+}
+
+.galleryGradientRight {
+  right: 0;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, #060010 100%);
+}
+
+.galleryContent {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  perspective: 1000px;
+  transform-style: preserve-3d;
+}
+
+.galleryTrack {
+  display: flex;
+  height: auto;
+  min-height: 200px;
+  justify-content: center;
+  align-items: center;
+  cursor: grab;
+  transform-style: preserve-3d;
+  width: 100%;
+}
+
+.galleryItem {
+  position: absolute;
+  display: flex;
+  height: 80vh;
+  align-items: center;
+  justify-content: center;
+  padding: 8%;
+  backface-visibility: hidden;
+  background-color: rgba(0,0,0,0.2);
+  flex-direction: column;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 8px 10px rgba(0,0,0,0.5);
+
+  .poster {
+    height: 80vh;
+    width: 300px;
+    border-radius: 10px;
+  }
+
+  p {
+    margin: 0;
+    text-align: center;
+  }
+}
+
+.galleryImage {
+  pointer-events: none;
+  height: 100px;
+  width: 100px;
+  border-radius: 15px;
+  border: 3px solid #fff;
+  object-fit: cover;
+  transition: 0.3s ease;
+}
+
+.galleryItem:hover .galleryImg {
+  transform: scale(1.05);
+  transition: 0.3s ease;
+}
+
+@media (max-width: 768px) {
+
+  .section {
+    h1 {
+      font-size: 2rem
+    }
+  }
+
+  .galleryItem {
+
+    .galleryImage {
+      width: 80px;
+      height: 80px;
+    }
+
+    h3 {
+      margin: 0;
+    }
+
+    p {
+      font-size: 11px;
+    }
+  }
+  
+}
+
+@media (max-width: 600px) {
+  .galleryItem {
+    p {
+      font-size: 10px;
+      font-weight: 500px;
+    }
+  }
+}

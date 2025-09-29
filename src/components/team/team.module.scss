@@ -1,0 +1,21 @@
+.section {
+    a {
+        text-decoration: none;
+        color: #f0f0f0;
+        margin-top: 10px;
+        transition: all 0.3s ease-in-out;
+        cursor: pointer;
+
+        &:hover {
+            transform: scale(1.2);
+        }
+    }
+
+    h4 {
+        margin : 0;
+    }
+
+    .dp {
+        border-radius: 50%;
+    }
+}

@@ -1,0 +1,36 @@
+.section {
+    width: 100%;
+    min-height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    article {
+        width: 50%;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+
+        .poster {
+            width: 90%;
+            height: 90%;
+        }
+
+        p {
+            text-align: center;
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    .section {
+        flex-direction: column;
+        padding: 50px 0 50px 0;
+
+        article {
+            width: 90%;
+        }
+    }
+}
