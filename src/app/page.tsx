@@ -1,6 +1,6 @@
 'use client'
 
-import { useRef, useState, useEffect, MouseEventHandler, ReactNode } from 'react';
+import { useRef, useState, useEffect, MouseEventHandler, ReactNode, useMemo } from 'react';
 import { motion, useInView } from 'framer-motion';
 import styles from './landing.module.scss';
 import Hero from '@/components/hero/Hero';
@@ -10,7 +10,7 @@ import Team from '@/components/team/Team';
 import BubbleMenu from '@/components/contact/Contact';
 
 interface props {
-  children: any,
+  children: ReactNode,
   delay: number,
   index: number|string,
   onMouseEnter: MouseEventHandler,
@@ -56,7 +56,7 @@ const Landing = ({
   initialSelectedIndex = -1
 }:LandingProps) => {
 
-  const items: ReactNode[] = [
+  const items: ReactNode[] = useMemo(() => [
     <Hero key={1} onNavigate={(section) => {
         const sectionMap: Record<string, number> = {
           services: 1,
@@ -81,7 +81,7 @@ const Landing = ({
     <Services key={2}/>,
     <Daala key={3}/>,
     <Team key={4}/>,
-  ]
+  ], [])
 
   const listRef = useRef<HTMLDivElement|null>(null);
   const [selectedIndex, setSelectedIndex] = useState(initialSelectedIndex);
@@ -217,7 +217,6 @@ const Landing = ({
         )}
       </div>
       <BubbleMenu
-        logo={<span style={{ fontWeight: 700 }}>RB</span>}
         items={contactOptions}
         menuAriaLabel="Toggle navigation"
         menuBg="#ffffff"

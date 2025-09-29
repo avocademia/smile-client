@@ -292,9 +292,9 @@ const ScrollStack = ({
       card.style.transformOrigin = 'top center';
       card.style.backfaceVisibility = 'hidden';
       card.style.transform = 'translateZ(0)';
-      (card.style as any).webkitTransform = 'translateZ(0)';
-      (card.style as any).perspective = '1000px';
-      (card.style as any).webkitPerspective = '1000px';
+      (card.style as unknown as Record<string, string>)["webkitTransform"] = "translateZ(0)";
+      (card.style as unknown as Record<string, string>)["perspective"] = "1000px";
+      (card.style as unknown as Record<string, string>)["webkitPerspective"] = "1000px";
     });
 
     setupLenis();

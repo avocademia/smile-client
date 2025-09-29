@@ -16,7 +16,6 @@ interface MenuItem {
 }
 
 interface BubbleMenuProps {
-  logo?: ReactNode | string;
   onMenuClick?: (isOpen: boolean) => void;
   className?: string;
   style?: CSSProperties;
@@ -31,7 +30,6 @@ interface BubbleMenuProps {
 }
 
 export default function BubbleMenu({
-  logo,
   onMenuClick,
   className,
   style,

@@ -8,7 +8,6 @@ import general from '../../../public/general.jpg'
 import education from '../../../public/hero.jpg'
 import softSkills from '../../../public/computer.jpg'
 import artisanalSkills from '../../../public/tailoring.jpg'
-import { postponeWithTracking } from 'next/dist/server/app-render/dynamic-rendering';
 
 interface GalleryProps {
   autoPlayInterval?: number
