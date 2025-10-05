@@ -33,28 +33,54 @@ const Gallery = ({ autoPlayInterval = 20000 }: GalleryProps) => {
     },
     {
       service: 'Education',
-      description: `Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
-                    Perferendis sunt voluptas ut mollitia vero eveniet nesciunt, 
-                    sequi odio iusto quam esse tempore commodi eligendi soluta porro 
-                    corrupti quo amet reprehenderit!
+      description: `Education is a fundamental right of every child, 
+                    and at SMILE Project we strive to provide quality 
+                    education to the underprivileged children in our society. 
+                    We believe that Every Child Is A Blessing and  our 
+                    goal is to empower these children with the knowledge and 
+                    skills that will help them break the cycle of poverty and 
+                    become self-reliant individuals. 
                    `,
       image: education
     },
     {
-      service: 'Soft Skills',
-      description: `Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
-                    Perferendis sunt voluptas ut mollitia vero eveniet nesciunt, 
-                    sequi odio iusto quam esse tempore commodi eligendi soluta porro 
-                    corrupti quo amet reprehenderit!
+      service: 'Accomodation',
+      description: `At our NGO, 
+                    we understand that education alone is not enough to ensure a 
+                    child's overall development. Hence, we also provide 
+                    accommodation to a select few children who lack a 
+                    stable and safe living environment, nutritious food, and a nurturing 
+                    environment that they can call home. 
+                    `,
+      image: education
+    },
+    {
+      service: 'Artisnal Skills',
+      description: `We strongly believe in equipping the children with 
+                    practical skills that will enable them to be 
+                    self-sufficient and contribute to the growth of 
+                    their communities. As part of our services, we offer 
+                    artisan skills training to our older children, where 
+                    they can learn various trades such as tailoring, 
+                    crocheting, soap and candle making among others. 
+                    These skills not only provide them with a means to earn 
+                    a living but also instill a sense of pride and ownership in 
+                    their work.
                    `,
       image: softSkills
     },
     {
-      service: 'Artisanal Skills',
-      description: `Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
-                    Perferendis sunt voluptas ut mollitia vero eveniet nesciunt, 
-                    sequi odio iusto quam esse tempore commodi eligendi soluta porro 
-                    corrupti quo amet reprehenderit!
+      service: 'Soft Skills',
+      description: `we also prioritize the development of soft skills 
+                    in our children. We understand that these skills, 
+                    such as communication, teamwork, and time management,
+                    are essential for their personal and professional growth. 
+                    Through various workshops and activities, we help our children 
+                    develop these skills, which will serve them well in all aspects 
+                    of their lives.In conclusion, our NGO's services go beyond 
+                    just providing education. We believe in creating a nurturing 
+                    and supportive environment for the children under our care, 
+                    where they can grow into responsible and empowered individuals.
                    `,
       image: artisanalSkills
     },
@@ -63,30 +89,56 @@ const Gallery = ({ autoPlayInterval = 20000 }: GalleryProps) => {
     },
     {
       service: 'Education',
-      description: `Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
-                    Perferendis sunt voluptas ut mollitia vero eveniet nesciunt, 
-                    sequi odio iusto quam esse tempore commodi eligendi soluta porro 
-                    corrupti quo amet reprehenderit!
+      description: `Education is a fundamental right of every child, 
+                    and at SMILE Project we strive to provide quality 
+                    education to the underprivileged children in our society. 
+                    We believe that Every Child Is A Blessing and  our 
+                    goal is to empower these children with the knowledge and 
+                    skills that will help them break the cycle of poverty and 
+                    become self-reliant individuals. 
                    `,
       image: education
     },
     {
       service: 'Soft Skills',
-      description: `Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
-                    Perferendis sunt voluptas ut mollitia vero eveniet nesciunt, 
-                    sequi odio iusto quam esse tempore commodi eligendi soluta porro 
-                    corrupti quo amet reprehenderit!
+      description: `we also prioritize the development of soft skills 
+                    in our children. We understand that these skills, 
+                    such as communication, teamwork, and time management,
+                    are essential for their personal and professional growth. 
+                    Through various workshops and activities, we help our children 
+                    develop these skills, which will serve them well in all aspects 
+                    of their lives.In conclusion, our NGO's services go beyond 
+                    just providing education. We believe in creating a nurturing 
+                    and supportive environment for the children under our care, 
+                    where they can grow into responsible and empowered individuals.
                    `,
       image: softSkills
     },
     {
       service: 'Artisanal Skills',
-      description: `Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
-                    Perferendis sunt voluptas ut mollitia vero eveniet nesciunt, 
-                    sequi odio iusto quam esse tempore commodi eligendi soluta porro 
-                    corrupti quo amet reprehenderit!
+      description: `We strongly believe in equipping the children with 
+                    practical skills that will enable them to be 
+                    self-sufficient and contribute to the growth of 
+                    their communities. As part of our services, we offer 
+                    artisan skills training to our older children, where 
+                    they can learn various trades such as tailoring, 
+                    crocheting, soap and candle making among others. 
+                    These skills not only provide them with a means to earn 
+                    a living but also instill a sense of pride and ownership in 
+                    their work.
                    `,
       image: artisanalSkills
+    },
+    {
+      service: 'Accomodation',
+      description: `At our NGO, 
+                    we understand that education alone is not enough to ensure a 
+                    child's overall development. Hence, we also provide 
+                    accommodation to a select few children who lack a 
+                    stable and safe living environment, nutritious food, and a nurturing 
+                    environment that they can call home. 
+                    `,
+      image: education
     },
   ]
 
