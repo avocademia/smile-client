@@ -8,6 +8,7 @@ import Services from '@/components/services/Services';
 import Daala from '@/components/daala/Daala';
 import Team from '@/components/team/Team';
 import BubbleMenu from '@/components/contact/Contact';
+import Internships from '@/components/internships/Internships';
 
 interface props {
   children: ReactNode,
@@ -61,7 +62,8 @@ const Landing = ({
         const sectionMap: Record<string, number> = {
           services: 1,
           daala: 2,
-          team: 3,
+          internships: 3,
+          team: 4,
         }
 
         const idx = sectionMap[section];
@@ -80,7 +82,8 @@ const Landing = ({
     />,
     <Services key={2}/>,
     <Daala key={3}/>,
-    <Team key={4}/>,
+    <Internships key={4}/>,
+    <Team key={5}/>,
   ], [])
 
   const listRef = useRef<HTMLDivElement|null>(null);

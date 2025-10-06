@@ -12,7 +12,8 @@ const Hero = ({onNavigate}:HeroProps) => {
     const sections = [
         'services',
         'daala',
-        'team'
+        'internships',
+        'team',
     ]
     return (
         <section className={styles.section}>

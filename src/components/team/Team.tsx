@@ -5,9 +5,10 @@ import Image from 'next/image'
 import styles from './team.module.scss'
 import { StaticImageData } from 'next/image'
 import dpPlaceholder from '../../../public/profile.jpg'
+import foundingDirector from '../../../public/staff/ceo.jpg'
 
 type Member = {
-    title: 'Mr.'|'Ms.'|'Mrs.'|'Sir',
+    title: 'Mr.'|'Ms.'|'Mrs.'|'Sir'| 'Mme.',
     name: string,
     link: string,
     social: 'whatsapp'|'facebook'|'phone'|'linked in',
@@ -18,44 +19,29 @@ type Member = {
 const Team = () => {
     const team: Member[] = [
         {
-            dp: dpPlaceholder,
-            title: 'Mr.',
-            name: 'Jane Doe',
-            social: 'whatsapp',
-            link: 'https://wa.me/254114576058',
-            jobTitle: 'Job Title'
+            dp: foundingDirector,
+            title: 'Mme.',
+            name: 'Getrude Busingye',
+            social: 'linked in',
+            link: 'https://www.linkedin.com',
+            jobTitle: 'Foundind Director'
         },
         {
             dp: dpPlaceholder,
-            title: 'Mr.',
+            title: 'Ms.',
             name: 'Jane Doe',
             social: 'facebook',
             link: 'https://www.facebook.com',
             jobTitle: 'Job Title'
         },
-        {
-            dp: dpPlaceholder,
-            title: 'Mr.',
-            name: 'Jane Doe',
-            social: 'phone',
-            link: '+254114576058',
-            jobTitle: 'Job Title'
-        },
-        {
-            dp: dpPlaceholder,
-            title: 'Mr.',
-            name: 'Jane Doe',
-            social: 'linked in',
-            link: 'https://www.linkedin.com',
-            jobTitle: 'Job Title'
-        },
+
     ]
     return (
         <section className={styles.section}>
             <ScrollStack>
                 {team.map((member, index) => (
                     <ScrollStackItem key={index}>
-                        <Image src={member.dp} alt={member.name} height={150} width={150} className={styles.dp}/>
+                        <Image src={member.dp} alt={member.name} height={200} width={200} className={styles.dp}/>
                         <h2>{member.title} {member.name}</h2>
                         <h3>{member.jobTitle}</h3>
                         {member.social === 'whatsapp' && 
