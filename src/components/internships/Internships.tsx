@@ -20,15 +20,15 @@ const Internships = () => {
                 <p>
                     Interning at a NGO is an amazing opportunity from students 
                     to gain hands-on experience and contribute to meaningful causes. 
-                    At SNILE we offer a supportive and enriching environmentfor 
-                    internation students lloking to intern with us. 
+                    At SMILE we offer a supportive and enriching environmentfor 
+                    internation students looking to intern with us. 
                     Our SMILE home offers comfortable accomodation for 
                     interns making their stay both convenient and memorable.
 
                     To apply for an internship please contact us for further details 
                     and requirements. We look forward to welcoming passionate and dedicated 
                     individuals who are eager to make a difference through their work with us. 
-                    Don't miss this chance to enhance your skills and knowledge 
+                    Do not miss this chance to enhance your skills and knowledge 
                     while making a positive impact on society
                 </p> 
             </article>

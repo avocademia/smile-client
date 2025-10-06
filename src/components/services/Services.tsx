@@ -162,6 +162,7 @@ const Gallery = ({ autoPlayInterval = 20000 }: GalleryProps) => {
               );
             })}
           </motion.div>
+          {isMobile && <span>-</span>}
         </div>
       </article>
     </section>
