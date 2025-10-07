@@ -13,34 +13,23 @@ const Daala = () => {
             <article>
                 <h3>OUR GOAL</h3>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                    Accusantium quaerat natus qui perferendis illum tempore 
-                    assumenda dolorem fuga architecto? Cumque, veniam autem. 
-                    Labore repudiandae dolor commodi expedita ab odio obcaecati?
+                    Daala Skills aims to equip and empower youth in our communities
+                    with marketable artisanal skills. 
                 </p>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                    Ipsum explicabo quasi cumque fugiat laudantium eos atque 
-                    temporibus eaque laborum. 
-                    Sapiente saepe ullam eos molestias sed expedita veritatis 
-                    perferendis repellat laboriosam?
-                </p>
+                    Currently we focus tailoring and crocheting skills. We intend to
+                    diversify the programs to include:
 
-                <h3>OUR PROJECTS</h3>
-
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                    Accusantium quaerat natus qui perferendis illum tempore 
-                    assumenda dolorem fuga architecto? Cumque, veniam autem. 
-                    Labore repudiandae dolor commodi expedita ab odio obcaecati?
+                    <ul>
+                        <li>Liquid Soap Production</li>
+                        <li>Candle Making</li>
+                        <li>Carpentry</li>
+                    </ul>
                 </p>
 
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                    Ipsum explicabo quasi cumque fugiat laudantium eos atque 
-                    temporibus eaque laborum. 
-                    Sapiente saepe ullam eos molestias sed expedita veritatis 
-                    perferendis repellat laboriosam?
+                    We are also aiming to expand our workshop in order to cater for 
+                    larger numbers of willing learners and possibly enlarge our catalog of courses.
                 </p>
 
             </article>
