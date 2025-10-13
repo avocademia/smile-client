@@ -11,7 +11,7 @@ const Daala = () => {
                 <Image src={poster} alt='daala poster' className={styles.poster}/>
             </article>
             <article>
-                <h3>OUR GOAL</h3>
+                <h1>OUR GOAL</h1>
                 <p>
                     Daala Skills aims to equip and empower youth in our communities
                     with marketable artisanal skills. 

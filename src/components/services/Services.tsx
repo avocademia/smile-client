@@ -26,16 +26,20 @@ const Gallery = ({ autoPlayInterval = 20000 }: GalleryProps) => {
     service?: string;
     description?: string;
     image?: StaticImageData;
+    backgroundColor?: string;
   }
 
   const slides: Slide[] = [
-    { poster: general },
+    { poster: general ,
+      backgroundColor: '#500c03',
+    },
     {
       service: 'Education',
       description: `Education is a fundamental right of every child, 
         and at SMILE Project we strive to provide quality 
         education to underprivileged children in our society.`,
       image: education,
+      backgroundColor: '#c50177',
     },
     {
       service: 'Accommodation',
@@ -43,20 +47,26 @@ const Gallery = ({ autoPlayInterval = 20000 }: GalleryProps) => {
         a stable and safe living environment, nutritious food, 
         and a nurturing home.`,
       image: education,
+      backgroundColor: '#009b2c',
     },
     {
       service: 'Artisanal Skills',
       description: `We equip children with practical artisan skills 
         such as tailoring, crocheting, soap and candle making.`,
       image: artisanalSkills,
+      backgroundColor: '#c91201',
     },
     {
       service: 'Soft Skills',
       description: `We also develop communication, teamwork, and time 
         management through workshops and activities.`,
       image: softSkills,
+      backgroundColor: '#00609b',
     },
-    {poster: farming}
+    {
+      poster: farming,
+      backgroundColor: '#500c03'
+    }
   ];
 
   // ✅ Responsive radius for landscape/mobile
@@ -127,6 +137,7 @@ const Gallery = ({ autoPlayInterval = 20000 }: GalleryProps) => {
                     transform: `translate(-50%, -50%) translate3d(${x}px, 0, ${z}px) rotateY(${angle}deg)`,
                     left: '50%',
                     top: '50%',
+                    border: `4px solid ${slide.backgroundColor}`
                   }}
                 >
                   {slide.poster ? (
@@ -149,11 +160,10 @@ const Gallery = ({ autoPlayInterval = 20000 }: GalleryProps) => {
                         <Image
                           src={slide.image!}
                           alt={slide.service}
-                          width={100}
-                          height={100}
                           className={styles.galleryImage}
                         />
-                        <h3>{slide.service}</h3>
+                        <h3 style={{
+                          color: slide.backgroundColor || 'black'                        }}>{slide.service}</h3>
                         <p>{slide.description}</p>
                       </>
                     )

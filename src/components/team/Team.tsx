@@ -12,8 +12,9 @@ type Member = {
     name: string,
     link: string,
     social: 'whatsapp'|'facebook'|'phone'|'linked in',
-    jobTitle: string
-    dp: StaticImageData
+    jobTitle: string,
+    dp: StaticImageData,
+    cardColor: string,
 }
 
 const Team = () => {
@@ -24,7 +25,8 @@ const Team = () => {
             name: 'Getrude Busingye',
             social: 'linked in',
             link: 'https://www.linkedin.com',
-            jobTitle: 'Foundind Director'
+            jobTitle: 'Foundind Director',
+            cardColor: '#63013cff'
         },
         {
             dp: dpPlaceholder,
@@ -32,38 +34,41 @@ const Team = () => {
             name: 'Jane Doe',
             social: 'facebook',
             link: 'https://www.facebook.com',
-            jobTitle: 'Job Title'
+            jobTitle: 'Job Title',
+            cardColor: '#013453ff'
         },
-
     ]
     return (
         <section className={styles.section}>
             <ScrollStack>
                 {team.map((member, index) => (
                     <ScrollStackItem key={index}>
-                        <Image src={member.dp} alt={member.name} height={200} width={200} className={styles.dp}/>
-                        <h2>{member.title} {member.name}</h2>
-                        <h3>{member.jobTitle}</h3>
-                        {member.social === 'whatsapp' && 
-                            <a href={member.link} target='_blank'>
-                                <Icon icon="cib:whatsapp" height={30} width={30}/>
-                            </a>
-                        } 
-                        {member.social === 'facebook' && 
-                            <a href={member.link} target='_blank'>
-                                <Icon icon="ic:baseline-facebook" height={30} width={30}/>
-                            </a>
-                        } 
-                        {member.social === 'linked in' && 
-                            <a href={member.link} target='_blank'>
-                                <Icon icon="mdi:linkedin" height={30} width={30}/>
-                            </a>
-                        } 
-                        {member.social === 'phone' && 
-                            <a href={`tel:${member.link}`}>
-                                <Icon icon="ic:baseline-phone" height={30} width={30}/>
-                            </a>
-                        } 
+                        <div className={styles.card} style={{backgroundColor: member.cardColor}}>
+                            <Image src={member.dp} alt={member.name} height={200} width={200} className={styles.dp}/>
+                            <h2>{member.title} {member.name}</h2>
+                            <h3>{member.jobTitle}</h3>
+                            {member.social === 'whatsapp' && 
+                                <a href={member.link} target='_blank'>
+                                    <Icon icon="cib:whatsapp" height={30} width={30}/>
+                                </a>
+                            } 
+                            {member.social === 'facebook' && 
+                                <a href={member.link} target='_blank'>
+                                    <Icon icon="ic:baseline-facebook" height={30} width={30}/>
+                                </a>
+                            } 
+                            {member.social === 'linked in' && 
+                                <a href={member.link} target='_blank'>
+                                    <Icon icon="mdi:linkedin" height={30} width={30}/>
+                                </a>
+                            } 
+                            {member.social === 'phone' && 
+                                <a href={`tel:${member.link}`}>
+                                    <Icon icon="ic:baseline-phone" height={30} width={30}/>
+                                </a>
+                            } 
+                        </div>
+                        
                     </ScrollStackItem>
                 ))}
             </ScrollStack>

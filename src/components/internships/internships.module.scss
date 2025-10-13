@@ -6,16 +6,18 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: #060010; // keeps the same deep tone as your site
-  color: #fff;
+  background: #f0f0f0; // keeps the same deep tone as your site
+  color: #0f0d0d;
   scroll-snap-align: start;
 
   h1 {
     font-size: 3rem;
-    font-weight: 700;
     margin-bottom: 2rem;
     text-align: center;
-    letter-spacing: 1.5px;
+    background: linear-gradient(90deg, #c50177, #009b2c, #c91201, #00609b, #500c03);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
 
   article {
@@ -50,7 +52,8 @@
       p {
         font-size: 1.1rem;
         line-height: 1.8;
-        color: #ddd;
+        font-weight: 600;
+        color: #100d0d;
         text-align: justify;
         background: rgba(255, 255, 255, 0.05);
         padding: 2rem;

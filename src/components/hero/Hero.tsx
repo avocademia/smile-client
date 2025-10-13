@@ -1,7 +1,7 @@
 'use client'
 
 import styles from './hero.module.scss'
-import logo from '../../../public/logo(white).png'
+import logo from '../../../public/logo.png'
 import Image from 'next/image'
 
 interface HeroProps {
@@ -29,7 +29,9 @@ const Hero = ({onNavigate}:HeroProps) => {
             </article>
             <article className={styles.action}>
                 {sections.map((section) => (
-                    <button key={section} onClick={() => onNavigate?.(section)}>{section}</button>
+                    <button key={section} onClick={() => onNavigate?.(section)} className={styles[section]}>
+                        <h2 className={styles.buttonText}>{section}</h2>
+                    </button>
                 ))}
             </article>
         </section>

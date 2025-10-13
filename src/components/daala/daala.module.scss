@@ -18,8 +18,19 @@
             height: 90%;
         }
 
+        h1 {
+            font-size: 3rem;
+            margin: 0;
+            background: linear-gradient(90deg, #c50177, #009b2c, #c91201, #00609b, #500c03);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
         p {
             text-align: center;
+            font-size: 14px;
+            font-weight: 600;
         }
     }
 }

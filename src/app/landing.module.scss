@@ -1,8 +1,8 @@
 @use'../styles/globals' as *;
 
 .page {
-  background-color: black;
-  color: white;
+  background-color: #f0f0f0;
+  color: rgb(15, 14, 14);
   height: 100vh;
   width: 100vw;
   overflow: hidden; // prevent outer body scrolling
@@ -36,11 +36,11 @@
 }
 
 .scrollList::-webkit-scrollbar-track {
-  background: #060010;
+  background: #f0f0f0;
 }
 
 .scrollList::-webkit-scrollbar-thumb {
-  background: #271e37;
+  background: #f0f0f0;
   border-radius: 4px;
 }
 
@@ -61,36 +61,14 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #170d27;
+  background-color: #f0f0f0;
 }
 
 .item.selected {
-  background-color: #271e37;
+  background-color: #f0f0f0;
 }
 
 .itemText {
-  color: white;
+  color: rgb(21, 18, 18);
   margin: 0;
-}
-
-.topGradient {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 50px;
-  background: linear-gradient(to bottom, #060010, transparent);
-  pointer-events: none;
-  transition: opacity 0.3s ease;
-}
-
-.bottomGradient {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 100px;
-  background: linear-gradient(to top, #060010, transparent);
-  pointer-events: none;
-  transition: opacity 0.3s ease;
 }
