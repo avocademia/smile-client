@@ -40,6 +40,7 @@ const Team = () => {
     ]
     return (
         <section className={styles.section}>
+            <h1>THE TEAM</h1>
             <ScrollStack>
                 {team.map((member, index) => (
                     <ScrollStackItem key={index}>
