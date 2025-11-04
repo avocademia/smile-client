@@ -1,7 +1,7 @@
 'use client'
 
 import { useRef, useState, useEffect, MouseEventHandler, ReactNode, useMemo } from 'react';
-import { motion } from 'framer-motion';
+import { motion, useInView } from 'framer-motion';
 import styles from './landing.module.scss';
 import Hero from '@/components/hero/Hero';
 import Services from '@/components/services/Services';
@@ -18,14 +18,18 @@ interface props {
   onClick: MouseEventHandler
 }
 
-const AnimatedItem = ({ children, index, onMouseEnter, onClick }: props) => {
+const AnimatedItem = ({ children, delay = 0, index, onMouseEnter, onClick }: props) => {
   const ref = useRef(null);
+  const inView = useInView(ref, { amount: 0.9 });
   return (
       <motion.div
         ref={ref}
         data-index={index}
         onMouseEnter={onMouseEnter}
         onClick={onClick}
+        initial={{ scale: 0.7, opacity: 0 }}
+        animate={inView ? { scale: 1, opacity: 1 } : { scale: 0.7, opacity: 0 }}
+        transition={{ duration: 0.2, delay }}
       >
         {children}
       </motion.div>
