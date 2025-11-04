@@ -1,6 +1,6 @@
 .section {
   width: 100%;
-  min-height: 100vh;
+  min-height: 100%;
   padding: 100px 5% 80px 5%;
   display: flex;
   flex-direction: column;
@@ -8,7 +8,6 @@
   align-items: center;
   background: #f0f0f0; // keeps the same deep tone as your site
   color: #0f0d0d;
-  scroll-snap-align: start;
 
   h1 {
     font-size: 3rem;
